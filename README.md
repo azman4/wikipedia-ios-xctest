@@ -22,17 +22,19 @@ b. Build the app on an iPhone simulator (you can choose any device).
 
 ## Usage
 
-•	Clone this repo
+•	Clone this repo.
 
-•	Open the xcode project file in Xcode
+•	Open the xcode project file in Xcode.
 
-•	Build the app on a simulator
+•	Build the app on a simulator.
 
-•	Go to the Test Navigator tab (It would be present in the left upper pane)
+•	To view the Page object model (Folder structure) -> You can simply view the WikipediaE2ETests folder in the project explorer.
+
+•	To view the Test cases -> Go to the Test Navigator tab (It would be present in the left upper pane).
 
 •	In the Test Navigator tab you'll see 3 test folders. We want to view and run the tests in WikipediaE2ETests.
 
-•   You can run the entire suite by just clicking on the run button (which appears when you hover on the WikipediaE2ETests folder) OR you can execute a particular test in within the suite by just expanding the folder and clicking on the run button next to a specific test.
+• You can run the entire suite by just clicking on the run button (which appears when you hover on the WikipediaE2ETests folder) OR you can execute a particular test in within the suite by just expanding the folder and clicking on the run button next to a specific test.
 
 ### Note - There are 2 seperate tests in the WikipediaE2ETests folder SearchE2ETests and SearchPerformanceTests. SearchE2ETests is the main Automated test folder. However, to show the capabilities of XCUITest I have added SearchPerformanceTests which essentially evaluates the performance of functionalities on the app.
 
