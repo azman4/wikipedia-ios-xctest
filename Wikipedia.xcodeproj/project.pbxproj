@@ -2029,10 +2029,10 @@
 		BCCB813E1C110702008BC602 /* NSDate+WMFPOTDTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCB813C1C110702008BC602 /* NSDate+WMFPOTDTitle.m */; };
 		BCD3200A1C6EC6BC00317D08 /* NSTimeZone+WMFTestingUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD320091C6EC6BC00317D08 /* NSTimeZone+WMFTestingUtils.m */; };
 		BCD557BB1C45B1600060A51A /* UIApplication+VisualTestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD557BA1C45B1600060A51A /* UIApplication+VisualTestUtils.m */; };
-		C798339F26DE6A7500E1F62D /* SearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C798339E26DE6A7500E1F62D /* SearchTests.swift */; };
+		C798339F26DE6A7500E1F62D /* SearchE2ETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C798339E26DE6A7500E1F62D /* SearchE2ETests.swift */; };
 		C79833B126DE6B1500E1F62D /* CommonMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79833B026DE6B1500E1F62D /* CommonMethods.swift */; };
 		C79833B426DE6FC100E1F62D /* SearchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79833B326DE6FC100E1F62D /* SearchScreen.swift */; };
-		C79833B726DE825E00E1F62D /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79833B626DE825E00E1F62D /* PerformanceTests.swift */; };
+		C79833B726DE825E00E1F62D /* SearchPerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79833B626DE825E00E1F62D /* SearchPerformanceTests.swift */; };
 		D4991439181D51DE00E6073C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4991438181D51DE00E6073C /* Foundation.framework */; };
 		D499143B181D51DE00E6073C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D499143A181D51DE00E6073C /* CoreGraphics.framework */; };
 		D499143D181D51DE00E6073C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D499143C181D51DE00E6073C /* UIKit.framework */; };
@@ -4556,12 +4556,12 @@
 		BCD557B91C45B1600060A51A /* UIApplication+VisualTestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIApplication+VisualTestUtils.h"; path = "WikipediaUnitTests/Code/UIApplication+VisualTestUtils.h"; sourceTree = SOURCE_ROOT; };
 		BCD557BA1C45B1600060A51A /* UIApplication+VisualTestUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+VisualTestUtils.m"; path = "WikipediaUnitTests/Code/UIApplication+VisualTestUtils.m"; sourceTree = SOURCE_ROOT; };
 		BCF012321AD2FA38008D3675 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
-		C798339C26DE6A7500E1F62D /* WikipediaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikipediaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C798339E26DE6A7500E1F62D /* SearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTests.swift; sourceTree = "<group>"; };
+		C798339C26DE6A7500E1F62D /* WikipediaE2ETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikipediaE2ETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C798339E26DE6A7500E1F62D /* SearchE2ETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchE2ETests.swift; sourceTree = "<group>"; };
 		C79833A026DE6A7500E1F62D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C79833B026DE6B1500E1F62D /* CommonMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonMethods.swift; sourceTree = "<group>"; };
 		C79833B326DE6FC100E1F62D /* SearchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreen.swift; sourceTree = "<group>"; };
-		C79833B626DE825E00E1F62D /* PerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTests.swift; sourceTree = "<group>"; };
+		C79833B626DE825E00E1F62D /* SearchPerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPerformanceTests.swift; sourceTree = "<group>"; };
 		D4991435181D51DE00E6073C /* Wikipedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wikipedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4991438181D51DE00E6073C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D499143A181D51DE00E6073C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -8204,16 +8204,16 @@
 			name = "Face Detection";
 			sourceTree = "<group>";
 		};
-		C798339D26DE6A7500E1F62D /* WikipediaTests */ = {
+		C798339D26DE6A7500E1F62D /* WikipediaE2ETests */ = {
 			isa = PBXGroup;
 			children = (
 				C79833B226DE6B5200E1F62D /* Screen Objects */,
 				C79833AF26DE6AEF00E1F62D /* Common Methods */,
-				C798339E26DE6A7500E1F62D /* SearchTests.swift */,
-				C79833B626DE825E00E1F62D /* PerformanceTests.swift */,
+				C798339E26DE6A7500E1F62D /* SearchE2ETests.swift */,
+				C79833B626DE825E00E1F62D /* SearchPerformanceTests.swift */,
 				C79833A026DE6A7500E1F62D /* Info.plist */,
 			);
-			path = WikipediaTests;
+			path = WikipediaE2ETests;
 			sourceTree = "<group>";
 		};
 		C79833AF26DE6AEF00E1F62D /* Common Methods */ = {
@@ -8248,7 +8248,7 @@
 				83ACAA9F24E6DC8E003B3035 /* Command Line Tools */,
 				B0606EAF20AA6FF0006EC6B9 /* WikipediaUITests */,
 				00021DE624D48EFD00476F97 /* Widgets */,
-				C798339D26DE6A7500E1F62D /* WikipediaTests */,
+				C798339D26DE6A7500E1F62D /* WikipediaE2ETests */,
 				D4991437181D51DE00E6073C /* Frameworks */,
 				D4991436181D51DE00E6073C /* Products */,
 				67D6C0152405A3E2005709B1 /* Recovered References */,
@@ -8273,7 +8273,7 @@
 				B0606EAE20AA6FF0006EC6B9 /* WikipediaUITests.xctest */,
 				00021DE124D48EFD00476F97 /* WidgetsExtension.appex */,
 				D8B589A521CD05070027083A /* languages */,
-				C798339C26DE6A7500E1F62D /* WikipediaTests.xctest */,
+				C798339C26DE6A7500E1F62D /* WikipediaE2ETests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -9248,9 +9248,9 @@
 			productReference = BC4273521A7C736800068882 /* WikipediaUnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C798339B26DE6A7400E1F62D /* WikipediaTests */ = {
+		C798339B26DE6A7400E1F62D /* WikipediaE2ETests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C79833A326DE6A7500E1F62D /* Build configuration list for PBXNativeTarget "WikipediaTests" */;
+			buildConfigurationList = C79833A326DE6A7500E1F62D /* Build configuration list for PBXNativeTarget "WikipediaE2ETests" */;
 			buildPhases = (
 				C798339826DE6A7400E1F62D /* Sources */,
 				C798339926DE6A7400E1F62D /* Frameworks */,
@@ -9261,9 +9261,9 @@
 			dependencies = (
 				C79833A226DE6A7500E1F62D /* PBXTargetDependency */,
 			);
-			name = WikipediaTests;
+			name = WikipediaE2ETests;
 			productName = WikipediaTests;
-			productReference = C798339C26DE6A7500E1F62D /* WikipediaTests.xctest */;
+			productReference = C798339C26DE6A7500E1F62D /* WikipediaE2ETests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		D4991434181D51DE00E6073C /* Wikipedia */ = {
@@ -9794,7 +9794,7 @@
 				B0606EAD20AA6FF0006EC6B9 /* WikipediaUITests */,
 				D8B589A421CD05070027083A /* languages */,
 				00021DE024D48EFD00476F97 /* WidgetsExtension */,
-				C798339B26DE6A7400E1F62D /* WikipediaTests */,
+				C798339B26DE6A7400E1F62D /* WikipediaE2ETests */,
 			);
 		};
 /* End PBXProject section */
@@ -10611,9 +10611,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C798339F26DE6A7500E1F62D /* SearchTests.swift in Sources */,
+				C798339F26DE6A7500E1F62D /* SearchE2ETests.swift in Sources */,
 				C79833B126DE6B1500E1F62D /* CommonMethods.swift in Sources */,
-				C79833B726DE825E00E1F62D /* PerformanceTests.swift in Sources */,
+				C79833B726DE825E00E1F62D /* SearchPerformanceTests.swift in Sources */,
 				C79833B426DE6FC100E1F62D /* SearchScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -14926,7 +14926,7 @@
 					"$(inherited)",
 				);
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = WikipediaTests/Info.plist;
+				INFOPLIST_FILE = WikipediaE2ETests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -14935,7 +14935,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.WikipediaTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WikipediaE2ETests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 5.0;
@@ -14960,7 +14960,7 @@
 				DEVELOPMENT_TEAM = 8H24W25Y9K;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = WikipediaTests/Info.plist;
+				INFOPLIST_FILE = WikipediaE2ETests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -14968,7 +14968,7 @@
 					"@loader_path/Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.WikipediaTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WikipediaE2ETests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -14992,7 +14992,7 @@
 				DEVELOPMENT_TEAM = 8H24W25Y9K;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = WikipediaTests/Info.plist;
+				INFOPLIST_FILE = WikipediaE2ETests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -15000,7 +15000,7 @@
 					"@loader_path/Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.WikipediaTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WikipediaE2ETests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -15024,7 +15024,7 @@
 				DEVELOPMENT_TEAM = 8H24W25Y9K;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = WikipediaTests/Info.plist;
+				INFOPLIST_FILE = WikipediaE2ETests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -15032,7 +15032,7 @@
 					"@loader_path/Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.WikipediaTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WikipediaE2ETests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -15056,7 +15056,7 @@
 				DEVELOPMENT_TEAM = 8H24W25Y9K;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = WikipediaTests/Info.plist;
+				INFOPLIST_FILE = WikipediaE2ETests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -15064,7 +15064,7 @@
 					"@loader_path/Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.WikipediaTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WikipediaE2ETests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -15088,7 +15088,7 @@
 				DEVELOPMENT_TEAM = 8H24W25Y9K;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = WikipediaTests/Info.plist;
+				INFOPLIST_FILE = WikipediaE2ETests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -15096,7 +15096,7 @@
 					"@loader_path/Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.WikipediaTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WikipediaE2ETests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -15120,7 +15120,7 @@
 				DEVELOPMENT_TEAM = 8H24W25Y9K;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = WikipediaTests/Info.plist;
+				INFOPLIST_FILE = WikipediaE2ETests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -15128,7 +15128,7 @@
 					"@loader_path/Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.WikipediaTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WikipediaE2ETests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -15152,7 +15152,7 @@
 				DEVELOPMENT_TEAM = 8H24W25Y9K;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = WikipediaTests/Info.plist;
+				INFOPLIST_FILE = WikipediaE2ETests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -15160,7 +15160,7 @@
 					"@loader_path/Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.WikipediaTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WikipediaE2ETests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -15184,7 +15184,7 @@
 				DEVELOPMENT_TEAM = 8H24W25Y9K;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = WikipediaTests/Info.plist;
+				INFOPLIST_FILE = WikipediaE2ETests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -15192,7 +15192,7 @@
 					"@loader_path/Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.WikipediaTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WikipediaE2ETests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -15216,7 +15216,7 @@
 				DEVELOPMENT_TEAM = 8H24W25Y9K;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = WikipediaTests/Info.plist;
+				INFOPLIST_FILE = WikipediaE2ETests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -15224,7 +15224,7 @@
 					"@loader_path/Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.WikipediaTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WikipediaE2ETests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -15248,7 +15248,7 @@
 				DEVELOPMENT_TEAM = 8H24W25Y9K;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = WikipediaTests/Info.plist;
+				INFOPLIST_FILE = WikipediaE2ETests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -15256,7 +15256,7 @@
 					"@loader_path/Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.WikipediaTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WikipediaE2ETests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -19498,7 +19498,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C79833A326DE6A7500E1F62D /* Build configuration list for PBXNativeTarget "WikipediaTests" */ = {
+		C79833A326DE6A7500E1F62D /* Build configuration list for PBXNativeTarget "WikipediaE2ETests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C79833A426DE6A7500E1F62D /* Debug */,

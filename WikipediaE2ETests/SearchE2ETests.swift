@@ -1,6 +1,6 @@
 import XCTest
 
-class SearchTests: XCTestCase {
+class SearchE2ETests: XCTestCase {
     // MARK: - Variables
     
     /// Instance of Common methods class
@@ -18,10 +18,10 @@ class SearchTests: XCTestCase {
         continueAfterFailure = false
     }
     
-    // MARK: - App Launch & Login Test Case Methods
+    // MARK: - Skip Tour, Search, Recently Searched and Clear Search history Test Case Methods
     
     /**
-     Method to test performace of app launch
+     Method to test and skip app tour if it is displayed
      */
     func test01SkipAppTour() {
         app.launch()
@@ -38,7 +38,7 @@ class SearchTests: XCTestCase {
     }
     
     /**
-     Method to test performace of app launch
+     Method to test search functionality on the app
      */
     func test02Search() {
         app.launch()
@@ -52,7 +52,7 @@ class SearchTests: XCTestCase {
     }
     
     /**
-     Method to test performace of app launch
+     Method to test recently searched functionality on the app
      */
     func test03RecentlySearched() {
         app.launch()
@@ -69,7 +69,7 @@ class SearchTests: XCTestCase {
     }
     
     /**
-     Method to test performace of app launch
+     Method to test clear search results functionality on the app
      */
     func test04ClearSearchResults() {
         app.launch()

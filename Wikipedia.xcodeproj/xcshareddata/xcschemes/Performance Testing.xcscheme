@@ -70,8 +70,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C798339B26DE6A7400E1F62D"
-               BuildableName = "WikipediaTests.xctest"
-               BlueprintName = "WikipediaTests"
+               BuildableName = "WikipediaE2ETests.xctest"
+               BlueprintName = "WikipediaE2ETests"
                ReferencedContainer = "container:Wikipedia.xcodeproj">
             </BuildableReference>
          </TestableReference>

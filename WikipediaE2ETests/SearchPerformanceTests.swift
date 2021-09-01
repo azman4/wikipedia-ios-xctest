@@ -1,6 +1,6 @@
 import XCTest
 
-class PerformanceTests: XCTestCase {
+class SearchPerformanceTests: XCTestCase {
     // MARK: - Variables
     
     /// Instance of Common methods class
@@ -18,7 +18,7 @@ class PerformanceTests: XCTestCase {
         continueAfterFailure = false
     }
     
-    // MARK: - App Launch & Search Result Page Case Methods
+    // MARK: - App Launch, Search List & Result Page Performance Test Case Methods
     
     /**
      Method to test performace of app launch
@@ -45,9 +45,9 @@ class PerformanceTests: XCTestCase {
     }
     
     /**
-     Method to test performace of Search result list
+     Method to test performace of Search result list page
      */
-    func test02searchResultList() {
+    func test02SearchResultList() {
         app.launch()
         measureMetrics([XCTPerformanceMetric.wallClockTime], automaticallyStartMeasuring: false) {
             self.commonMethods.waitForElementToAppear(element: search.searchTextbox, timeout: 10)
@@ -65,7 +65,7 @@ class PerformanceTests: XCTestCase {
     /**
      Method to test performace of Search result page
      */
-    func test03searchResultPage() {
+    func test03SearchResultPage() {
         app.launch()
         measureMetrics([XCTPerformanceMetric.wallClockTime], automaticallyStartMeasuring: false) {
             self.commonMethods.waitForElementToAppear(element: search.searchTextbox, timeout: 10)
