@@ -34,7 +34,7 @@ b. Build the app on an iPhone simulator (you can choose any device).
 
 •   You can run the entire suite by just clicking on the run button (which appears when you hover on the WikipediaE2ETests folder) OR you can execute a particular test in within the suite by just expanding the folder and clicking on the run button next to a specific test.
 
-## Note - There are 2 seperate tests in the WikipediaE2ETests folder SearchE2ETests and SearchPerformanceTests. SearchE2ETests is the main Automated test folder. However, to show the capabilities of XCUITest I have added SearchPerformanceTests which essentially evaluates the performance of functionalities on the app.
+# Note - There are 2 seperate tests in the WikipediaE2ETests folder SearchE2ETests and SearchPerformanceTests. SearchE2ETests is the main Automated test folder. However, to show the capabilities of XCUITest I have added SearchPerformanceTests which essentially evaluates the performance of functionalities on the app.
 
 ## Reports
 
